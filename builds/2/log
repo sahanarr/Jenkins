@@ -1,0 +1,19 @@
+Started by user [8mha:////4PLjolcgtEdOy/fGVVIcSqnT51HLRO0HHGGMDm0kOjPvAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgYe/dLi1CL94sSMxLxEAE2NbqPBAAAA[0mSahana R Rayker
+Running as SYSTEM
+Building in workspace C:\ProgramData\Jenkins\.jenkins\workspace\Devops
+FATAL: Git repository URL 1 is an empty string in job definition. Checkout requires a valid repository URL
+java.lang.IllegalArgumentException: Git repository URL 1 is an empty string in job definition. Checkout requires a valid repository URL
+	at hudson.plugins.git.GitSCM.buildEnvironment(GitSCM.java:1570)
+	at hudson.plugins.git.GitSCM.buildEnvVars(GitSCM.java:1515)
+	at hudson.model.AbstractBuild.getEnvironment(AbstractBuild.java:967)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:1297)
+	at hudson.scm.SCM.checkout(SCM.java:540)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1241)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:649)
+	at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:85)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:521)
+	at hudson.model.Run.execute(Run.java:1900)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:44)
+	at hudson.model.ResourceController.execute(ResourceController.java:107)
+	at hudson.model.Executor.run(Executor.java:449)
+Finished: FAILURE
